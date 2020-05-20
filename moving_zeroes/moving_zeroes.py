@@ -4,21 +4,23 @@ Returns: a List of integers
 '''
 def moving_zeroes(arr):
     # Your code here
+
     a = arr
     b = arr
     if (a == b): 
         return a 
-  
+        # return(set(arr))
     else: 
-  
-        # Create empty array
-        res = [] 
+        # Create empty list (array)
+        arr2 = [] 
   
         while(a < b+1 ): 
-              
-            res.append(a) 
+            #add to empty list
+            arr2.append(a) 
+            #add plus 1
             a += 1
-        return res 
+        return arr2 
+        # return(set(arr))
         
   
 

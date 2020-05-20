@@ -14,7 +14,7 @@ def eating_cookies(n):
     elif n == 2:
         return 2
     else:
-        return eating_cookies(n-1), eating_cookies(n-2), eating_cookies(n-3)
+        return eating_cookies(n-1) + eating_cookies(n-2) + eating_cookies(n-3)
 
 
     #total number of ways cookie monster can eat cookies = 3. 
