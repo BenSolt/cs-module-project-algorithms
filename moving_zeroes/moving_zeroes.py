@@ -4,8 +4,23 @@ Returns: a List of integers
 '''
 def moving_zeroes(arr):
     # Your code here
-
-    pass
+    a = arr
+    b = arr
+    if (a == b): 
+        return a 
+  
+    else: 
+  
+        # Create empty array
+        res = [] 
+  
+        while(a < b+1 ): 
+              
+            res.append(a) 
+            a += 1
+        return res 
+        
+  
 
 
 if __name__ == '__main__':
