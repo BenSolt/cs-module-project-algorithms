@@ -18,7 +18,8 @@ def eating_cookies(n):
 
 
     #total number of ways cookie monster can eat cookies = 3. 
-    #    
+    #  
+     
     
     print(eating_cookies(10))
 

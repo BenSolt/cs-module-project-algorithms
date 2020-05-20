@@ -20,11 +20,14 @@ def product_of_all_other_numbers(arr):
     # return product_of_all_other_numbers
 
     a = 1
+    #for each index in array
     for i in arr: 
-        a *= i 
+        #a
+        a*= i 
 
     for i in arr: 
         print(int(a*(i**-1)))
+    return arr
    
     
 
