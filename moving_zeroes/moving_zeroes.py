@@ -7,9 +7,10 @@ def moving_zeroes(arr):
 
     a = arr
     b = arr
+ 
     if (a == b): 
-        return a 
-        # return(set(arr))
+        # return a
+        return(set(arr))
     else: 
         # Create empty list (array)
         arr2 = [] 
@@ -20,7 +21,9 @@ def moving_zeroes(arr):
             #add plus 1
             a += 1
         return arr2 
-        # return(set(arr))
+
+
+       
         
   
 
