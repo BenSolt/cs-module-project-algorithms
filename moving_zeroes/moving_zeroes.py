@@ -5,27 +5,22 @@ Returns: a List of integers
 def moving_zeroes(arr):
     # Your code here
 
-    a = arr
-    b = arr
- 
-    if (a == b): 
-        # return a
-        return(set(arr))
-    else: 
-        # Create empty list (array)
-        arr2 = [] 
-  
-        while(a < b+1 ): 
-            #add to empty list
-            arr2.append(a) 
-            #add plus 1
-            a += 1
-        return arr2 
+    count = 0
+    n = len(arr)
+      
+    for i in range(n):
+        #if array index does not equal 0
+        if arr[i] != 0: 
+            #add + 1
+            arr[count] = arr[i] 
+            count+=1
+    #while count less than len(arr)  
+    while count < n: 
+        arr[count] = 0
+        count += 1
 
+    return arr
 
-       
-        
-  
 
 
 if __name__ == '__main__':
