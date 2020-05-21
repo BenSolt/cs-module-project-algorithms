@@ -5,7 +5,34 @@ Returns: a List of integers
 def sliding_window_max(nums, k):
     # Your code here
 
-    pass
+    # k = to how big array of group nums selected is [ 0,0,0 ] this case = 3.
+
+    # maxx = 0
+    # numblength = len(nums)
+    # # for i in range of (len(nums) - k + 1)
+    # for i in range(numblength - k + 1):
+    #     maxx = nums[i]
+    #     for j in range(1, k):
+    #         if nums[i + j] > maxx:
+    #             maxx = nums[i + j]
+    #     print(str(maxx) + " ", end = "") 
+
+    # return maxx
+    
+
+    maxx = 0
+    n = len(nums)
+
+    for i in range(n - k + 1): 
+        maxx = nums[i]
+        current_sum = 0
+        for j in range(k): 
+            current_sum = current_sum + nums[i + j] 
+  
+        maxx = max(current_sum, maxx ) 
+  
+    return maxx
+       
 
 
 if __name__ == '__main__':
@@ -14,3 +41,5 @@ if __name__ == '__main__':
     k = 3
 
     print(f"Output of sliding_window_max function is: {sliding_window_max(arr, k)}")
+
+
