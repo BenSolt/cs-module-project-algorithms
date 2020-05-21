@@ -29,7 +29,6 @@ def sliding_window_max(nums, k):
         for j in range(k): 
             current_sum = current_sum + nums[i + j] 
   
-        # Update result if required. 
         maxx = max(current_sum, maxx ) 
   
     return maxx
